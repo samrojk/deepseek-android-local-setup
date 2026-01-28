@@ -43,3 +43,40 @@ pkg update && pkg upgrade -y
 pkg install git cmake clang make wget python ffmpeg sox espeak termux-api -y
 ```
 This installs all required tools.
+
+---
+
+## 🧠 Step 3: Install llama.cpp (AI Engine)
+```bash
+git clone https://github.com/ggerganov/llama.cpp
+cd llama.cpp
+mkdir build && cd build
+cmake ..
+make -j4
+```
+⏳ Takes 2–5 minutes.
+
+---
+
+## ✅ Verify Installation
+```bash
+./main --help
+```
+If help appears → Installation successful.
+
+---
+
+## 📦 Step 4: Download DeepSeek Model
+
+Go back to main folder:
+```bash
+cd ..
+mkdir models
+cd models
+```
+Download recommended lightweight model:
+```bash
+wget https://huggingface.co/TheBloke/DeepSeek-R1-Distill-Qwen-1.5B-GGUF/resolve/main/deepseek-r1-distill-qwen-1.5b-q4_k_m.gguf
+```
+Size: ~1GB
+Best for Android devices.
