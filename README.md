@@ -86,10 +86,15 @@ Best for Android devices.
 ```bash
 ollama serve
 ```
-now open new session in the termux then run this command
+Nnow open new session in the termux then run this command
 
 ```bash
 initiate deepseek-r1-1.5b
 ```
+So you have successfully running the your own offgrid llm, enjoy!
 
-so you have successfully running the your own offgrid llm, enjoy!
+Its a resoning model so it won't be a super genius but you can ask ques like
+```bash
+summarise this email
+```
+like ques it will run fine in any phone!
