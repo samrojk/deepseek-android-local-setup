@@ -80,3 +80,16 @@ wget https://huggingface.co/TheBloke/DeepSeek-R1-Distill-Qwen-1.5B-GGUF/resolve/
 ```
 Size: ~1GB
 Best for Android devices.
+
+## Run the Server
+
+```bash
+ollama serve
+```
+now open new session in the termux then run this command
+
+```bash
+initiate deepseek-r1-1.5b
+```
+
+so you have successfully running the your own offgrid llm, enjoy!
